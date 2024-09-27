@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <form action="/search-results" method="GET">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/propertylist1.jpg');
+     background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.property-listing {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 40px;
+}
+
+.property-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #0a09099c;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.property-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ffff;
+}
+
+.property-details p {
+    margin: 5px 0;
+    color: #a9a7a7;
+}
+
+.property-details p:last-child {
+    font-weight: bold;
+}
+
+    </style>
+    <div class="property-listing">
+        <h1>Available Properties</h1>
+        <div class="property-card">
+            <img src="images/property.jpg" alt="House Image">
+            <div class="property-details">
+                <h2>Beautiful Family Home</h2>
+                <p>Location: Chennai</p>
+                <p>Price:30,00000</p>
+                <p>3BHK</p>
+            </div>
+        </div>
+        
+        <div class="property-card">
+            <img src="images/property1.jpg" alt="House Image">
+            <div class="property-details">
+                <h2>Modern Apartment</h2>
+                <p>Location: Shelbyville</p>
+                <p>Price: $450,000</p>
+                <p>2 Bedrooms, 1 Bathroom</p>
+            </div>
+        </div>
+        
+        <div class="property-card">
+            <img src="images/property3.jpg" alt="House Image">
+            <div class="property-details">
+                <h2>Cozy Cottage</h2>
+                <p>Location: Ogdenville</p>
+                <p>Price: $200,000</p>
+                <p>2 Bedrooms, 1 Bathroom</p>
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="images/property4.jpg" alt="House Image">
+            <div class="property-details">
+                <h2>Cozy Cottage</h2>
+                <p>Location: Ogdenville</p>
+                <p>Price: $200,000</p>
+                <p>2 Bedrooms, 1 Bathroom</p>
+            </div>
+    </div>
+</form>
+</body>
+</html>

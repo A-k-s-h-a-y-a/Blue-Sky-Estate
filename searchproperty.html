@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("images/searchproperty.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff51;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .search-container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #0a0000;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #0a0000;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #060606;
+            box-shadow: 0 0 5px rgba(3, 3, 3, 0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #1900ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color:#0056b3;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(8, 8, 8, 0.7);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .search-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            input, select, button {
+                font-size: 1em;
+            }
+        }
+    </style>
+
+    <div class="search-container">
+        <h1>Search Properties</h1>
+        <form action="/searchproperty.html" method="get">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter a city or neighborhood">
+            </div>
+
+            <div class="form-group">
+                <label for="min-price">Min Price:</label>
+                <input type="text" id="min-price" name="min-price" placeholder="Minimum Price">
+            </div>
+
+            <div class="form-group">
+                <label for="max-price">Max Price:</label>
+                <input type="text" id="max-price" name="max-price" placeholder="Maximum Price">
+            </div>
+
+            <div class="form-group">
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property-type">
+                    <option value="villa">Villa</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="1BHK">1BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                </select>
+            </div>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
